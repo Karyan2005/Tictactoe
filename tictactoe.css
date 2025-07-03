@@ -1,0 +1,75 @@
+body {
+  background-color: #1a1a2e; /* Deep Purple */
+  color: #00f9ff; /* Cyan Neon */
+  font-family: 'Orbitron', sans-serif; /* Futuristic Font */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #00f9ff;
+  text-shadow: 0 0 8px #00f9ff;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 8px;
+  margin: 20px auto;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: #2e1f47; /* Dark Violet */
+  color: #00f9ff;
+  font-size: 48px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 2px solid #7f5af0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #7f5af0;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.cell:hover {
+  background-color: #3f2c66;
+  transform: scale(1.05);
+}
+
+button {
+  margin-top: 15px;
+  padding: 12px 24px;
+  background-color: #7f5af0; /* Purple Glow */
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #7f5af0;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+  background-color: #a78bfa;
+  box-shadow: 0 0 15px #a78bfa;
+}
+
+#status {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #f4f4f5;
+  text-shadow: 0 0 6px #00f9ff;
+}
